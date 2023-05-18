@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h3>Inicio</h3>
+    <table>
+        <thead>
+          <tr>
+            <th>País</th>
+            <th>Capital</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for usuario in dic %}
+            <tr>
+              <td>{{ usuario.Pais }}</td>
+              <td>{{ usuario.Capital }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          text-align: left;
+          padding: 8px;
+          border-bottom: 1px solid #ddd;
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+      </style>
+</body>
+</html> 
